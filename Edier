@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baby Shower de Eyron</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #a7d9f7; /* Un celestito base */
+      background-image:
+        /* Nubes */
+        url('https://www.transparenttextures.com/patterns/white-prism.png'), /* Puedes cambiar esta textura si quieres otras nubes */
+        /* Estrellas - puedes usar un patrón de estrellas o un gradiente radial repetido para un efecto */
+        radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.4) 1px, transparent 1px),
+        radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 0.5) 1px, transparent 1px),
+        radial-gradient(circle at 40% 60%, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
+        radial-gradient(circle at 90% 30%, rgba(255, 255, 255, 0.6) 1px, transparent 1px);
+      background-repeat: repeat, repeat, repeat, repeat, repeat;
+      background-position: 0 0, 50px 50px, 150px 100px, 200px 20px, 10px 180px;
+      background-size: auto, 10px 10px, 12px 12px, 8px 8px, 15px 15px;
+      animation: moveClouds 200s linear infinite alternate; /* Animación de nubes */
+      position: relative; /* Para posicionar la luna */
+      overflow-x: hidden; /* Evitar scroll horizontal por la luna */
+    }
+
+    /* Luna */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 50px; /* Ajusta la posición vertical de la luna */
+      right: 50px; /* Ajusta la posición horizontal de la luna */
+      width: 80px;
+      height: 80px;
+      background-color: #fceb9f; /* Color de la luna */
+      border-radius: 50%;
+      box-shadow: 0 0 20px rgba(255, 255, 150, 0.7); /* Brillo de la luna */
+      z-index: -1; /* Para que esté detrás del contenido */
+    }
+
+    /* Animación de Nubes (opcional, si la imagen de nubes se presta) */
+    @keyframes moveClouds {
+      from { background-position: 0 0, 50px 50px, 150px 100px, 200px 20px, 10px 180px; }
+      to { background-position: 1000px 0, 1050px 50px, 1150px 100px, 1200px 20px, 1010px 180px; }
+    }
+
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2rem;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+      margin-top: 4rem;
+      position: relative; /* Asegura que el contenido esté por encima del fondo */
+      z-index: 1;
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      color: #8c6e54;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      color: #5f5f5f;
+      font-style: italic;
+    }
+    .details {
+      font-size: 1.1rem;
+      margin: 1rem 0;
+    }
+    a {
+      color: #b08b6b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .footer {
+      margin-top: 2rem;
+      font-style: italic;
+      color: #888;
+    }
+    .envelope-note {
+      margin-top: 2rem;
+      font-size: 1.05rem;
+      color: #6b5b53;
+      background-color: #fef7f4;
+      padding: 1rem;
+      border-radius: 10px;
+      border: 1px dashed #d3bba1;
+    }
+
+    /* Estilos para el botón de confirmar asistencia */
+    .confirm-button {
+      display: inline-block;
+      margin-top: 2.5rem;
+      padding: 15px 30px;
+      background-color: #8c6e54; /* Color similar al título */
+      color: white;
+      text-decoration: none;
+      border-radius: 50px; /* Bordes más redondeados */
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .confirm-button:hover {
+      background-color: #6b5b53; /* Color más oscuro al pasar el mouse */
+      transform: translateY(-3px); /* Pequeño efecto de elevación */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Baby Shower de Eyron</h1>
+    <div class="subtitle">¡Nos preparamos con amor para la llegada de Eyron Edier!</div>
+
+    <div class="details">
+      🗓️ <strong>Fecha:</strong> Sábado, 14 de junio de 2025<br />
+      🕡 <strong>Hora:</strong> 6:30 PM<br />
+      📍 <strong>Ubicación:</strong> <a href="https://maps.app.goo.gl/TGSeqapw66CA5Hjh9" target="_blank">Ver en Google Maps</a>
+    </div>
+
+    <p style="margin-top: 2rem; font-size: 1.1rem;">
+      Queremos compartir este momento mágico contigo,<br />
+      ¡tu presencia hará que sea aún más especial!
+    </p>
+
+    <div class="envelope-note">
+      En lugar de regalos grandes, tu muestra de cariño puede ser una <strong>lluvia de sobres</strong> 💌.<br />
+      ¡Gracias por ser parte de este hermoso momento!
+    </div>
+
+    <a href="https://wa.me/50769194868?text=¡Hola!%20Me%20encantaría%20confirmar%20mi%20asistencia%20al%20Baby%20Shower%20de%20Eyron%20Edier." target="_blank" class="confirm-button">
+      Confirmar Asistencia por WhatsApp
+    </a>
+
+    <div class="footer">
+      Con mucho amor,<br />
+      Génesis y Eyron Edier 💛
+    </div>
+  </div>
+</body>
+</html>
